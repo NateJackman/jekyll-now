@@ -5,47 +5,43 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+  <body class="page-{{ page.class }}">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <header class="site-header">
+      <div class="header-nav">
+        <nav class="site-nav">
+          <h1 class="header-title"><a href="{{ site.baseurl }}/">Nate Jackman</a></h1>
+          <div class="header-links">
+            <ul>
+              <li><a href="{{ site.baseurl }}/" class="link-home">Home</a></li>
+              <li><a href="{{ site.baseurl }}/work" class="link-work">Work</a></li>
+              <li><a href="{{ site.baseurl }}/contact" class="link-contact">Contact</a></li>
+            </ul>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+    {{ content }}
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <ul>
+          <li><span>Nate Jackman</span></li>
+          <li><a href="mailto:natejackman@gmail.com">natejackman@gmail.com</a></li>
+        </ul>
       </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
+
+    <script src="/js/site.js"></script>
+
   </body>
 </html>

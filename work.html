@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /work/
+class: work
+---
+
+<main class="content">
+    <h2>Work.</h2>
+    <p class="work-text">Modern web development requires many hats to be worn with the lines between back-end and front-end being blurred.</p>
+    <section class="work-areas">
+        <div class="work-area">
+            <h3>JavaScript</h3>
+            <p class="work-text">The most important skill in web development.  JS solutions come in many different shapes and sizes.  I've provided single page applications, full-stack web apps, middle tier between front and back ends, marketing page magic.</p>
+        </div>
+        <div class="work-area">
+            <h3>UI/UX</h3>
+            <p class="work-text">Taking comps directly to clean, performant, semantic markup, that is mobile friendly and maintainable.  Using the latest in HTML5/CSS3, and leveraging many years of cross-browser experience, I am able to provide quality work.</p>
+        </div>
+        <div class="work-area">
+            <h3>Full Stack</h3>
+            <p class="work-text">Development goes beyond the browser.  Whether it is writing a new endpoint in a micro-service, or tracing an issue with a silent error, I'm comfortable diving in at any level of the stack and implement or debug full end to end solutions.</p>
+        </div>
+    </section>
+    <div id="work-section">
+        {% for work in site.data.work %}
+            <article class="work">
+                <div class="work-info">
+                    <div class="work-details">
+                        <h3 class="work-title">{{work.name}}</h3>
+                        <p class="work-description">{{work.description}}</p>
+                        <h4 class="work-done">I Did...</h4>
+                        <p class="work-description">{{work.myWork}}</p>
+                        <ul class="work-tags">
+                            {% for skill in work.skills %}
+                                <li>{{skill}}</li>
+                            {% endfor %}
+                        </ul>
+                        <p class="work-link"><a href="{{work.url}}" target="_blank">{{work.urlName}}</a></p>
+                    </div>
+                </div>
+                <div class="work-display">
+                    <div class="work-image"><img src="{{ site.baseurl }}/images/{{work.image}}" /></div>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</main>

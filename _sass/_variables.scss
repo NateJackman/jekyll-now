@@ -3,21 +3,21 @@
 // VARIABLES
 //
 
+$siteWidth: 960px;
+
+$font-family: 'Roboto', sans-serif;
+$regular: 300;
+$semi-bold: 400;
+$extra-bold: 700;
+
 // Colors
-$blue: #4183C4;
-
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$white: #ffffff;
+$black: #000000;
+$bermuda: #78D5D7;
+$athensGray: #E6E6EA;
+$sunsetOrange: #FE4A49;
+$shamrock: #3DDC97;
+$troyBlue: #1446A0;
 
 // Mobile breakpoints
 @mixin mobile {

@@ -1,0 +1,103 @@
+- name: Tidylog
+  description:  "Tidylog is a time tracking application for contractors who want to easily track against multiple projects and clients"
+  myWork: "Full stack development leveraging node.js and mongo to output a Single Page App matching UI/UX requirements. Planning and gathering of business requirements."
+  image: tidylog.jpg
+  urlName: tidylog.com
+  url: http://www.tidylog.com
+  skills:
+    - JavaScript
+    - React.js
+    - Redux
+    - Node.js
+    - CSS
+    - SASS
+    - HTML
+    - Mongo
+    - REST API
+- name: UnderArmour
+  description:  "Under Armour, Inc. is an American sports clothing and accessories company."
+  myWork: "Worked with business on a many differing efforts from writing and implemnting micro-services and apis, customizing an in-house cms, creating new platform ui/ux experiences, rewriting and implementing key, high traffic compoennts.  "
+  image: ua.jpg
+  urlName: underarmour.com
+  url: http://www.underarmour.com
+  skills:
+    - React.js
+    - Angular.js
+    - jQuery
+    - Node.js
+    - Less
+    - SQL
+    - Mongo
+    - API
+    - JavaScript
+    - Responsive
+    - HTML5
+    - Unit testing
+    - Handlebars
+    - Knockout.js
+- name: Nike
+  description: "Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing and worldwide marketing and selling of footwear, apparel, equipment, accessories and services."
+  myWork: "Worked on a team that was responsible for the creation and maintenance of the front end consumer expeirence and the back end CMS components that allows for the creation and display of consumer pages."
+  image: nike.jpg
+  urlName: Nike.com
+  url: http://www.nike.com
+  skills:
+    - JavaScript
+    - CSS3
+    - HTML5
+    - CMS
+    - Java
+    - CQ5
+- name: Bioipsum
+  description:  "This is a fun, single-page website where you enter your name and gender, then pick a career category from: medical, history, philosophy, wildcard, art, science, workingman, or government, and it generates a short, random bio for you based on what you entered."
+  myWork: "Static slice from a PSD, Node.js backend integration, server setup, API creation, custom data cms."
+  image: bioipsum.jpg
+  urlName: Bioipsum.com
+  url: http://www.bioipsum.com
+  skills:
+    - CSS3
+    - HTML5
+    - JavaScript
+    - Node.js
+    - Less
+    - PSD to HTML
+    - REST API
+    - Responsive
+- name: Microsoft
+  description: "Internet Information Services (IIS, formerly Internet Information Server) is an extensible web server created by Microsoft for use with Windows NT family."
+  myWork: "Created clean static slice from PSD, custom JavaScript solutions to meet UI/UX requirements, assist in integration."
+  image: iis.jpg
+  urlName: IIS.net
+  url: http://www.iis.net
+  skills:
+    - CSS3
+    - HTML5
+    - JavaScript
+    - Integration
+- name: Sonos
+  description: "Sonos is a Santa Barbara, California consumer electronics company founded in 2002 by John MacFarlane, Craig Shelburne, Tom Cullen and Trung Mai. The company makes a variety of wireless audio products."
+  myWork: "Created custom HTML emails that appear perfect across all email clients and in various languages to be massly distributed"
+  image: sonos-email.jpg
+  skills:
+    - Email
+    - Tables
+    - Cross Client
+    - PSD Slice
+- name: Other Work
+  skipResize: true
+  description: "I've worked on a wide variety of other projects, both directly with clients and as a vendor for other companies and agencies."
+  myWork: "These projects included misc startups, medical records training web app, data reporting tools, static pages, custom cms implementations, emails, plugins, custom content management builder tools, personal blogs, portfolios, and more."
+  image: work-group.jpg
+  skills:
+    - Web App
+    - CSS
+    - HTML
+    - JavaScript
+    - Angular.js
+    - Node.js
+    - jQuery
+    - require.js
+    - c#
+    - vb.net
+    - asp/asp.net
+    - WordPress

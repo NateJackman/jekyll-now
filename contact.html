@@ -1,0 +1,43 @@
+---
+layout: default
+permalink: /contact/
+class: contact
+---
+
+<main class="content">
+    <div class="contact-section">
+        <h2>Contact.</h2>
+        <p class="contact-text">Thanks for stopping by.  I'm sure I'd love to hear from you.  You can fill out the form below to send me a message or you can email me directly if you'd prefer at <a href="mailto:natejackman@gmail.com">natejackman@gmail.com</a></p>
+
+        <div class="contact-forms">
+            <form action="https://formspree.io/natejackman@gmail.com" method="POST">
+                <div class="contact-form">
+
+                    <h3>Send me a message.</h3>
+                    <p class="form-field"><label for="m_name">Name.</label><input id="m_name" type="text" name="name" /></p>
+                    <p class="form-field"><label for="m_email">Email.</label><input id="m_email" type="email" name="_replyto" /></p>
+                    <p class="form-field"><label for="m_msg">Message.</label><textarea id="m_msg" name="message"></textarea></p>
+                    <input type="hidden" name="_next" value="//natejackman.com/contact/" />
+                    <p class="contact-button"><button class="button" type="submit">Send</button></p>
+
+                </div>
+            </form>
+            <form action="https://formspree.io/natejackman@gmail.com" method="POST">
+                <div class="contact-form">
+                    <h3>Request an invite to my slack channel.</h3>
+                    <p class="form-field"><label for="s_name">Name.</label><input id="s_name" type="text" name="name" /></p>
+                    <p class="form-field"><label for="s_email">Email.</label><input id="s_email" type="email" name="_replyto" /></p>
+                    <p class="contact-text">Once your request is received and verified, an invite will be sent with the slack channel details.</p>
+                    <input type="hidden" name="slack-request" value="true" />
+                    <input type="hidden" name="_next" value="//natejackman.com/contact/" />
+                    <p class="contact-button"><button class="button" type="submit">Send</button></p>
+                </div>
+                <div class="contact-text">
+                    <h4>Email not your thing?</h4>
+                    <p class="contact-text">You can catch me on <br /><strong>Twitter:</strong> <a target="_blank" href="https://twitter.com/nate_jackman">@nate_jackman</a> or <strong>Linkedin:</strong> <a target="_blank" href="//www.linkedin.com/in/nate-jackman-a9814a15">Nate Jackman</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</main>
