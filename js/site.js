@@ -1,27 +1,6 @@
 (function() {
-    var likes = [
-        'teach javascript and frontend development',
-        'create complex web apps',
-        'test out new and interesting frameworks',
-        'solve challenging web problems for businesses',
-        'build pixel perfect markup',
-        'write reusable, easy to maintain code'
-    ];
-    var funs = [
-        'run long distances',
-        'play sports',
-        'learn about everything',
-        'play with my dogs',
-        'cheer on the Chicago Cubs',
-        'watch movies with my wife',
-        'spend time with my son',
-        'hike',
-        'discover new foods',
-        'attend sporting events',
-        'watch Notre Dame football',
-        'build wood furniture for fun',
-        'take cross country road trips'
-    ];
+    var likes = window.nateFacts && window.nateFacts.likes;
+    var funs = window.nateFacts && window.nateFacts.funs;
     var usedLikes = ['make the complicated web things so you don\'t have to'];
     var usedFuns = [];
     var factBtn = document.getElementById('factBtn');
@@ -30,7 +9,6 @@
 
     function getRandomItem(arr, usedArr) {
         if (!arr.length) {
-            console.log('resetting');
             arr.splice.apply(arr, [0, 0].concat(usedArr));
             usedArr.splice(0, usedArr.length);
         }

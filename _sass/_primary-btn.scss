@@ -1,0 +1,40 @@
+.btn {
+    color: $sunsetOrange;
+    background: transparent;
+    border: none;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        background: transparent;
+        color: lighten($sunsetOrange, 10%);
+
+        &:before,
+        &:after {
+            transition: all 0.7s ease;
+            width: 100%;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 0px;
+        height: 3px;
+        background: lighten($sunsetOrange, 10%);
+        transition: all 0.4s ease;
+    }
+    &:after {
+        top: inherit;
+        left: inherit;
+        bottom: 0;
+        right: 0;
+    }
+}

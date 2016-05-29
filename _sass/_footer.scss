@@ -1,0 +1,26 @@
+// footer
+
+.site-footer {
+    margin-top: 3em;
+    border-top: 1px solid $athensGray;
+}
+.site-footer-links {
+    @extend %container;
+    text-align: center;
+    padding: 2em 1em;
+
+    ul {
+        @extend .row;
+    }
+    li {
+        @extend .col-xs-12;
+        @extend .col-sm-2;
+
+        font-size: .75em;
+
+        &:first-child {
+            @extend .off-sm-4;
+        }
+    }
+
+}

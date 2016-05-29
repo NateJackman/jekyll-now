@@ -7,24 +7,24 @@ class: home
     <div class="about">
         <div class="about-col">
             <div class="about-img">
-                <img src="{{ site.baseurl }}/images/natejackman.jpg" />
+                <img alt="Nate Jackman - Web Developer" src="{{ site.baseurl }}/images/natejackman.jpg" />
                 <p class="about-btn"><button id="factBtn">Shuffle Facts</button></p>
             </div>
         </div>
         <section class="about-text">
-            <h2>Hi, I'm Nate.</h2>
-            <p class="nw">I'm a web developer in <strong>Portland, Oregon.</strong></p>
+            <h1 class="about-title">Hi, I'm Nate.</h1>
+            <h2 class="nw">I'm a web developer in <strong>Portland, Oregon.</strong></h2>
             <p>I like to... <span id="likeText">make the complicated web things so you don't have to</span></p>
             <p>In my free time I... <span id="funText" class="fadeOut">Play sports</span></p>
         </section>
     </div>
-    <div class="post-list">
-        <h2>Articles.</h2>
-        <ul class="posts">
+    <div>
+        <h2 class="page-title">Articles.</h2>
+        <ul class="post-list">
             {% for post in site.posts %}
                 <li class="post">
                     <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-                    <span class="date">{{ post.date | date_to_string }}</span>
+                    <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
                     <div class="post-excerpt">
                         {{ post.excerpt }}
                         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
@@ -33,4 +33,10 @@ class: home
             {% endfor %}
         </ul>
     </div>
+    <script>
+        window.nateFacts = {
+            funs: JSON.parse('{{site.data.facts.funs | jsonify }}'),
+            likes: JSON.parse('{{site.data.facts.likes | jsonify }}')
+        };
+    </script>
 </main>

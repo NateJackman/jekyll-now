@@ -1,0 +1,129 @@
+
+// work page
+
+.work-areas {
+    @extend .row;
+    padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid $athensGray;
+    border-width: 1px 0;
+}
+
+.work-text {
+    font-size: .875em;
+}
+
+.work-area {
+    @extend .col-xs-12;
+    @extend .col-sm-4;
+    margin-bottom: 1em;
+
+    h3 {
+        color: $sunsetOrange;
+        margin-bottom: .25em;
+    }
+}
+
+.work-text {
+    em {
+        font-style: normal;
+        display: inline-block;
+        // @extend .col-xs-2;
+        background: $athensGray;
+        padding: .25em;
+        margin-bottom: .25em;
+    }
+}
+
+.work {
+    @extend .row;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+
+    border-bottom: 1px solid $athensGray;
+    overflow: hidden;
+
+    &:last-child {
+        border-bottom-width: 0;
+        padding-bottom: 0;
+    }
+}
+
+.work-title {
+    font-size: 1.125em;
+    margin-bottom: .75em;
+}
+
+.work-info {
+    @extend .col-sm-4;
+    @extend .col-xs-12;
+
+    margin-bottom: 2em;
+}
+
+.work-description, .work-done {
+    margin-bottom: 1em;
+    font-size: .875em;
+}
+
+.work-done {
+    font-weight: 500;
+    padding-bottom: 0em;
+    margin-bottom: .5em;
+}
+
+.work-display {
+    @extend .off-sm-1;
+    @extend .col-sm-7;
+    @extend .col-xs-12;
+}
+.work-image{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    &.expanded {
+        height: auto;
+        &:after {
+            display: none;
+        }
+    }
+    &:after {
+        content: "click to view full";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: .75em;
+        padding: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        background: rgba($shamrock, .95);
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.work-tags {
+    margin: 0 0 1em;
+    li {
+        display: inline-block;
+        background: $shamrock;
+        font-size: .875em;
+        padding: 0 .5em;
+        margin-bottom: .5em;
+        font-weight: 500;
+    }
+}
+.work-link {
+    font-size: .875em;
+}

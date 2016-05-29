@@ -1,0 +1,47 @@
+
+.post-title {
+    color: $sunsetOrange;
+    margin-bottom: 0;
+    font-size: 1.25em;
+}
+.post-meta {
+    margin-bottom: 1em;
+    font-size: .875em;
+    font-weight: 400;
+}
+
+.post-body {
+    font-weight: 300;
+    color: #333;
+    max-width: 680px;
+    p {
+        margin: 1em 0;
+        font-size: .9375em;
+
+        code {
+            background: #eee;
+            font-size: 1em;
+        }
+    }
+    pre {
+        box-sizing: border-box;
+        display: inline-block;
+        background: #eee;
+        padding: 1em;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    strong {
+        font-weight: 500;
+    }
+}
+.post-comments {
+    max-width: 680px;
+}
+
+hr {
+   border : 0;
+   height : 1px;
+   background: $athensGray;
+   margin : 1em 0;
+}

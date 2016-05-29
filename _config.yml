@@ -7,7 +7,7 @@ name: Nate Jackman
 
 # Short bio or description (displayed in the header)
 description: JavaScript Web Developer | Portland, Or
-metaDescription: A JavaScript expert with years of experience creating high quality solutions for businesses with a focus on Web Apps, UI/UX, HTML5, JavaScript, node.js, React.js, Jquery, SCSS / CSS, Responsive Design and other Front-End Technologies.
+metaDescription: A JavaScript engineer with years of experience creating high quality solutions for businesses with a focus on Full-Stack Web Apps, UI/UX, HTML.JS/CSS.
 
 # Meta Keywords
 metaKeywords: javascript, html5, css3, node.js, react.js, angular.js, express
@@ -35,6 +35,8 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
+# Yandex
+yandex:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

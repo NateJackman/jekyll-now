@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: page
 permalink: /work/
 class: work
+title: Work.
 ---
 
-<main class="content">
-    <h2>Work.</h2>
+<div>
     <p class="work-text">Modern web development requires many hats to be worn with the lines between back-end and front-end being blurred.</p>
     <section class="work-areas">
         <div class="work-area">
@@ -39,9 +39,9 @@ class: work
                     </div>
                 </div>
                 <div class="work-display">
-                    <div class="work-image"><img src="{{ site.baseurl }}/images/{{work.image}}" /></div>
+                    <div class="work-image"><img src="{{ site.baseurl }}/images/{{work.image}}" alt="{{work.urlName}}" /></div>
                 </div>
             </article>
         {% endfor %}
     </div>
-</main>
+</div>

@@ -1,0 +1,100 @@
+.site-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $athensGray;
+    margin-bottom: 3em;
+}
+
+.site-header-nav {
+    @extend %container;
+}
+.site-nav {
+    @extend .row;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-title {
+    @extend .col-xs-3;
+
+    font-size: 2em;
+    font-weight: 100;
+    a {
+        text-decoration: none;
+        color: $shamrock;
+    }
+}
+.site-links {
+    @extend .col-xs-9;
+    align-items: flex-end;
+    li {
+        display: inline-block;
+        & ~ li {
+            margin-left: 1em;
+        }
+    }
+    .btn {
+        font-size: 1.2em;
+        text-decoration: none;
+        padding: .75em;
+    }
+}
+
+@media (max-width: 500px) {
+    .site-title, .site-links {
+        max-width: 100%;
+        width: 100%;
+        flex-basis: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .site-links {
+        margin-top:1em;
+    }
+}
+
+.link-work {
+    @extend .btn;
+    color: $shamrock;
+    &:hover {
+        color: darken($shamrock, 10%);;
+    }
+
+    &:before,
+    &:after {
+        background: lighten($shamrock, 10%);
+
+        .page-work & {
+           width: 100%;
+        }
+    }
+}
+.link-contact {
+    @extend .btn;
+    color: $troyBlue;
+
+    &:hover {
+        color: darken($troyBlue, 10%);
+    }
+
+    &:before,
+    &:after {
+        background: lighten($troyBlue, 10%);
+
+        .page-contact & {
+           width: 100%;
+        }
+    }
+}
+.link-home {
+    @extend .btn;
+
+    &:before,
+    &:after {
+        background: lighten($sunsetOrange, 10%);
+
+        .page-home & {
+           width: 100%;
+        }
+    }
+}
