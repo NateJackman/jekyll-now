@@ -16,7 +16,7 @@
     - REST API
 - name: UnderArmour
   description:  "Under Armour, Inc. is an American sports clothing and accessories company."
-  myWork: "Worked with business on a many differing efforts from writing and implemnting micro-services and apis, customizing an in-house cms, creating new platform ui/ux experiences, rewriting and implementing key, high traffic compoennts.  "
+  myWork: "Worked with business on a many differing efforts from writing and implemnting micro-services and apis, customizing an in-house cms, creating new platform ui/ux experiences, rewriting and implementing key, high traffic components.  "
   image: ua.jpg
   urlName: underarmour.com
   url: http://www.underarmour.com
